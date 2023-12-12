@@ -3,7 +3,7 @@
 @section('routeName', 'index')
 
 @section('content')
-    <h2 class="bg-center">Users</h2>
+{{--    <h2 class="bg-center">Users</h2>--}}
     <table class="m-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" style="width: 500px">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
         <tr>

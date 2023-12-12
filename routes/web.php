@@ -20,6 +20,10 @@ Route::get('/', function () {
 });
 
 Route::resource('/users', UserController::class)->middleware('auth');
+//Route::get('/users', [UserController::class, 'users'])
+//    ->middleware('auth')
+//    ->name('users');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,4 +35,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
